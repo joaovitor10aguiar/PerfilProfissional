@@ -1,0 +1,28 @@
+let idx = 0;
+
+document.getElementById('adicionarInfo').addEventListener('click', function () {
+  document.getElementById('novaInfoForm').style.display = 'block';
+});
+
+document.getElementById('salvarInfo').addEventListener('click', function () {
+  let novaInfo = document.getElementById('novaInfo').value;
+
+  if (novaInfo.trim() !== '') {
+    let p = document.createElement('p');
+    p.classList.add('paragrafo');
+    p.setAttribute('data-idx', idx);
+    p.innerHTML = `${novaInfo} <button onclick="removerParagrafo(${idx})">Remover</button>`;
+
+    document.getElementById('perfil').appendChild(p);
+    document.getElementById('novaInfo').value = '';
+    document.getElementById('novaInfoForm').style.display = 'none';
+    idx++;
+  }
+});
+
+function removerParagrafo(index) {
+  let elemento = document.querySelector(`[data-idx='${index}']`);
+  if (elemento) {
+    elemento.remove();
+  }
+}

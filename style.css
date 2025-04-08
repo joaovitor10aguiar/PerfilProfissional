@@ -1,0 +1,128 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #333;
+}
+
+/* Container*/
+.container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Imagem de perfil */
+.perfil-foto {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #2c3e50;
+}
+
+/* Títulos */
+h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h2, h3, h4 {
+  color: #2c3e50;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Parágrafos */
+p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Listas */
+ul, ol {
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Botões e inputs */
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#novaInfoForm {
+  margin-top: 20px;
+}
+
+#novaInfo {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+
+.paragrafo {
+  background-color: #eef4ff;
+  border: 1px solid #ccd;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  text-align: left;
+  color: #333;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #555;
+}
